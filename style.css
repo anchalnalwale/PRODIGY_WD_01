@@ -1,19 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap");
-/*----- VARIABLES CSS -----*/
-/*Varibles en general*/
+
 :root {
-  /* Colors */
-  --first-color: #010A43;
-  --second-color: #FFC2C2;
+  --first-color: black;
+  --second-color: rgb(248, 113, 113);
   --white-color: #fff;
-  /* Font and typography */
-  --body-font: 'Tinos', serif;
+   --body-font: 'Tinos', serif;
   --h1-font-size: 2.3rem;
   --h2-font-size: 2.3rem;
   --normal-font-size: 0.93rem;
   --big-font-size: 5rem;
   --smaller-font-size: 0.75rem;
-  /* z index */
   --z-fixed: 100;
 }
 
@@ -27,7 +23,6 @@
   }
 }
 
-/*----- BASE -----*/
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -63,7 +58,6 @@ p {
   font-size: var(--normal-font-size);
 }
 
-/*----- LAYOUT -----*/
 .bd-grid {
   max-width: 1200px;
   margin-left: 1rem;
@@ -80,8 +74,6 @@ p {
   z-index: var(--z-fixed);
 }
 
-/*----- PAGES -----*/
-/*Nav*/
 .nav {
   height: 3.5rem;
   display: flex;
@@ -132,12 +124,10 @@ p {
   text-align: right;
 }
 
-/*Aparecer menu*/
 .show {
   left: 0;
 }
 
-/*Home*/
 .home {
   position: relative;
   display: grid;
@@ -170,7 +160,6 @@ p {
 
 .home__secondary {
   width: 0;
-  /*Animation*/
   background-color: var(--second-color);
   display: flex;
   align-items: center;
@@ -263,3 +252,4 @@ p {
     height: calc(3.5rem + 1.5rem);
   }
 }
+
